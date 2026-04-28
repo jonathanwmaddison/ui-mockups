@@ -51,6 +51,8 @@ Just ask:
 
 Claude Code will load the skill automatically when the request matches its description.
 
+![ui-mockups running inside Claude Code](assets/mockup-1.png)
+
 ## Use (standalone)
 
 The mockup script is a normal CLI — Claude Code is not required:
