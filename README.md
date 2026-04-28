@@ -4,6 +4,16 @@
 
 A Claude Code skill that generates AI image mockups of UI screens **in your repo's visual style**.
 
+## Why
+
+Iterating on UI in code is slow and brittle — even with an LLM, each attempt costs minutes and lands plausible-looking but subtly off. Image generation is the opposite: a few seconds per variation, high fidelity, and `gpt-image-2` is finally good enough to honor a real brand.
+
+Use it as a forcing function for the visual concept. Get ten options for the empty state, pick the one that works, then translate the winning frame into code. At that point you're not exploring anymore — you're implementing a decision you've already made. The result is more polished UI shipped faster.
+
+The styleguide phase keeps the mockups *yours* — same palette, type voice, and component vocabulary as your real product, not a generic SaaS aesthetic.
+
+## How it works
+
 Two phases:
 
 1. **Styleguide** — one-time per repo, authored by Claude. It reads your codebase (Tailwind config, CSS variables, component primitives, layout, voice) and writes `mockups/STYLEGUIDE.md`. Edit it once; it's reused on every run.
